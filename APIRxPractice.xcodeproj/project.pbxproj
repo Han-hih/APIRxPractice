@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8042CFC52AF934480021331A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFC42AF934480021331A /* AppDelegate.swift */; };
 		8042CFC72AF934490021331A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFC62AF934490021331A /* SceneDelegate.swift */; };
-		8042CFC92AF934490021331A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFC82AF934490021331A /* ViewController.swift */; };
+		8042CFC92AF934490021331A /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFC82AF934490021331A /* MovieSearchViewController.swift */; };
 		8042CFCC2AF934490021331A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042CFCA2AF934490021331A /* Main.storyboard */; };
 		8042CFCE2AF9344A0021331A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8042CFCD2AF9344A0021331A /* Assets.xcassets */; };
 		8042CFD12AF9344A0021331A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042CFCF2AF9344A0021331A /* LaunchScreen.storyboard */; };
+		8042CFD92AF93AE30021331A /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFD82AF93AE30021331A /* MovieSearchViewModel.swift */; };
+		8042CFDE2AF93BF10021331A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8042CFDD2AF93BF10021331A /* RxCocoa */; };
+		8042CFE02AF93BF10021331A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8042CFDF2AF93BF10021331A /* RxSwift */; };
+		8042CFE32AF93CB90021331A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFE22AF93CB90021331A /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8042CFC12AF934480021331A /* APIRxPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIRxPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8042CFC42AF934480021331A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8042CFC62AF934490021331A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8042CFC82AF934490021331A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8042CFC82AF934490021331A /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
 		8042CFCB2AF934490021331A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8042CFCD2AF9344A0021331A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8042CFD02AF9344A0021331A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8042CFD22AF9344A0021331A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8042CFD82AF93AE30021331A /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		8042CFE22AF93CB90021331A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8042CFE02AF93BF10021331A /* RxSwift in Frameworks */,
+				8042CFDE2AF93BF10021331A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +66,39 @@
 			children = (
 				8042CFC42AF934480021331A /* AppDelegate.swift */,
 				8042CFC62AF934490021331A /* SceneDelegate.swift */,
-				8042CFC82AF934490021331A /* ViewController.swift */,
+				8042CFE12AF93CAC0021331A /* Network */,
+				8042CFDB2AF93B0C0021331A /* ViewControllers */,
+				8042CFDA2AF93B000021331A /* ViewModels */,
 				8042CFCA2AF934490021331A /* Main.storyboard */,
 				8042CFCD2AF9344A0021331A /* Assets.xcassets */,
 				8042CFCF2AF9344A0021331A /* LaunchScreen.storyboard */,
 				8042CFD22AF9344A0021331A /* Info.plist */,
 			);
 			path = APIRxPractice;
+			sourceTree = "<group>";
+		};
+		8042CFDA2AF93B000021331A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8042CFD82AF93AE30021331A /* MovieSearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8042CFDB2AF93B0C0021331A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8042CFC82AF934490021331A /* MovieSearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8042CFE12AF93CAC0021331A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8042CFE22AF93CB90021331A /* APIManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,10 @@
 			dependencies = (
 			);
 			name = APIRxPractice;
+			packageProductDependencies = (
+				8042CFDD2AF93BF10021331A /* RxCocoa */,
+				8042CFDF2AF93BF10021331A /* RxSwift */,
+			);
 			productName = APIRxPractice;
 			productReference = 8042CFC12AF934480021331A /* APIRxPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 8042CFB82AF934480021331A;
+			packageReferences = (
+				8042CFDC2AF93BF10021331A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 8042CFC22AF934480021331A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8042CFC92AF934490021331A /* ViewController.swift in Sources */,
+				8042CFC92AF934490021331A /* MovieSearchViewController.swift in Sources */,
 				8042CFC52AF934480021331A /* AppDelegate.swift in Sources */,
+				8042CFE32AF93CB90021331A /* APIManager.swift in Sources */,
 				8042CFC72AF934490021331A /* SceneDelegate.swift in Sources */,
+				8042CFD92AF93AE30021331A /* MovieSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +406,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8042CFDC2AF93BF10021331A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8042CFDD2AF93BF10021331A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042CFDC2AF93BF10021331A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8042CFDF2AF93BF10021331A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042CFDC2AF93BF10021331A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8042CFB92AF934480021331A /* Project object */;
 }
