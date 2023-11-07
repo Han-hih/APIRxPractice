@@ -17,6 +17,8 @@
 		8042CFDE2AF93BF10021331A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8042CFDD2AF93BF10021331A /* RxCocoa */; };
 		8042CFE02AF93BF10021331A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8042CFDF2AF93BF10021331A /* RxSwift */; };
 		8042CFE32AF93CB90021331A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042CFE22AF93CB90021331A /* APIManager.swift */; };
+		80551C592AFA304B00191BD9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 80551C582AFA304B00191BD9 /* .gitignore */; };
+		80D119D32AF943E800F9E19E /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8042CFD22AF9344A0021331A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8042CFD82AF93AE30021331A /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
 		8042CFE22AF93CB90021331A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		80551C582AFA304B00191BD9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 		8042CFB82AF934480021331A = {
 			isa = PBXGroup;
 			children = (
+				80551C582AFA304B00191BD9 /* .gitignore */,
 				8042CFC32AF934480021331A /* APIRxPractice */,
 				8042CFC22AF934480021331A /* Products */,
 			);
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8042CFC82AF934490021331A /* MovieSearchViewController.swift */,
+				80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80551C592AFA304B00191BD9 /* .gitignore in Resources */,
 				8042CFD12AF9344A0021331A /* LaunchScreen.storyboard in Resources */,
 				8042CFCE2AF9344A0021331A /* Assets.xcassets in Resources */,
 				8042CFCC2AF934490021331A /* Main.storyboard in Resources */,
@@ -182,6 +189,7 @@
 				8042CFC92AF934490021331A /* MovieSearchViewController.swift in Sources */,
 				8042CFC52AF934480021331A /* AppDelegate.swift in Sources */,
 				8042CFE32AF93CB90021331A /* APIManager.swift in Sources */,
+				80D119D32AF943E800F9E19E /* MovieCollectionViewCell.swift in Sources */,
 				8042CFC72AF934490021331A /* SceneDelegate.swift in Sources */,
 				8042CFD92AF93AE30021331A /* MovieSearchViewModel.swift in Sources */,
 			);
