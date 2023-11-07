@@ -10,7 +10,9 @@ import RxSwift
 
 class MovieSearchViewModel {
     
+    let movieItems = PublishSubject<[DailyBoxOfficeList]>()
     
+
     
     
     
