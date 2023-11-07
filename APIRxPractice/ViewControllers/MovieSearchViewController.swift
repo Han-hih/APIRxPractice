@@ -39,14 +39,8 @@ final class MovieSearchViewController: UIViewController {
         searchBar.rx.searchButtonClicked
             .throttle(.seconds(1), scheduler: MainScheduler.instance)
             .withLatestFrom(searchBar.rx.text.orEmpty) { _, query in
+                guard query.count == 8 else { return "20231107" }
                 return query
-            }
-            .map { text -> Int in
-                guard let newText = Int(text) else { return 20231107 }
-                return newText
-            }
-            .map { validText -> String in
-                    return String(validText)
             }
             .flatMap {
                 APIManager.fetchBoxOfficeData(date: $0)

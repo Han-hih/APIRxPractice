@@ -77,11 +77,12 @@
 			children = (
 				8042CFC42AF934480021331A /* AppDelegate.swift */,
 				8042CFC62AF934490021331A /* SceneDelegate.swift */,
+				80551C5E2AFA5B8E00191BD9 /* ReusableProtocol.swift */,
 				8042CFE12AF93CAC0021331A /* Network */,
+				80551C602AFA84E600191BD9 /* Model */,
 				8042CFDB2AF93B0C0021331A /* ViewControllers */,
 				8042CFDA2AF93B000021331A /* ViewModels */,
 				8042CFCA2AF934490021331A /* Main.storyboard */,
-				80551C5E2AFA5B8E00191BD9 /* ReusableProtocol.swift */,
 				8042CFCD2AF9344A0021331A /* Assets.xcassets */,
 				8042CFCF2AF9344A0021331A /* LaunchScreen.storyboard */,
 				8042CFD22AF9344A0021331A /* Info.plist */,
@@ -101,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				8042CFC82AF934490021331A /* MovieSearchViewController.swift */,
-				80D119D22AF943E800F9E19E /* MovieTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,6 +114,14 @@
 				80551C5C2AFA318600191BD9 /* NetworkModel.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		80551C602AFA84E600191BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80D119D22AF943E800F9E19E /* MovieTableViewCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
