@@ -21,7 +21,7 @@
 		80551C5B2AFA309C00191BD9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80551C5A2AFA309C00191BD9 /* APIKey.swift */; };
 		80551C5D2AFA318600191BD9 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80551C5C2AFA318600191BD9 /* NetworkModel.swift */; };
 		80551C5F2AFA5B8E00191BD9 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80551C5E2AFA5B8E00191BD9 /* ReusableProtocol.swift */; };
-		80D119D32AF943E800F9E19E /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */; };
+		80D119D32AF943E800F9E19E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D119D22AF943E800F9E19E /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		80551C5A2AFA309C00191BD9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		80551C5C2AFA318600191BD9 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		80551C5E2AFA5B8E00191BD9 /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
-		80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		80D119D22AF943E800F9E19E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				8042CFC82AF934490021331A /* MovieSearchViewController.swift */,
-				80D119D22AF943E800F9E19E /* MovieCollectionViewCell.swift */,
+				80D119D22AF943E800F9E19E /* MovieTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				80551C5B2AFA309C00191BD9 /* APIKey.swift in Sources */,
 				8042CFC52AF934480021331A /* AppDelegate.swift in Sources */,
 				8042CFE32AF93CB90021331A /* APIManager.swift in Sources */,
-				80D119D32AF943E800F9E19E /* MovieCollectionViewCell.swift in Sources */,
+				80D119D32AF943E800F9E19E /* MovieTableViewCell.swift in Sources */,
 				8042CFC72AF934490021331A /* SceneDelegate.swift in Sources */,
 				8042CFD92AF93AE30021331A /* MovieSearchViewModel.swift in Sources */,
 				80551C5F2AFA5B8E00191BD9 /* ReusableProtocol.swift in Sources */,

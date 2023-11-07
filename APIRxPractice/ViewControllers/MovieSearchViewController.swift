@@ -9,15 +9,20 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MovieSearchViewController: UIViewController {
+final class MovieSearchViewController: UIViewController {
 
-    let searchBar = {
+   private let searchBar = {
         let search = UISearchBar()
-        search.placeholder = "영화를 검색해 주세요."
+        search.placeholder = "날짜를 입력해 주세요"
         return search
     }()
     
-    
+   private let tableView = {
+        let view = UITableView()
+       view.register(MovieTableViewCell.self, forCellReuseIdentifier: MovieTableViewCell.identifier)
+       
+       return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +30,7 @@ class MovieSearchViewController: UIViewController {
         setUI()
     }
 
-    func setUI() {
+   private func setUI() {
         [searchBar].forEach {
             view.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
